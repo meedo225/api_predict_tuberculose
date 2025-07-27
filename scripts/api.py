@@ -6,6 +6,13 @@ from tensorflow.keras.preprocessing.image import load_img, img_to_array
 import gdown
 from io import BytesIO
 from PIL import Image
+import tensorflow as tf
+import os
+
+
+os.environ['CUDA_VISIBLE_DEVICES'] = ''
+
+tf.config.set_visible_devices([], 'GPU')
 
 # Fonction pour charger le modèle à partir d'un fichier Google Drive
 def load_model_from_drive(file_id: str):
