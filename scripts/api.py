@@ -40,8 +40,8 @@ async def predict(
     x_api_key: str = Header(None)
 ):
     # Vérification de la clé API
-    if x_api_key != API_KEY:
-        raise HTTPException(status_code=403, detail="Non autorisé. Vérifiez votre clé API.")
+    #if x_api_key != API_KEY:
+     #   raise HTTPException(status_code=403, detail="Non autorisé. Vérifiez votre clé API.")
 
     # Vérifier que le fichier est une image
     if not file.content_type.startswith('image/'):
