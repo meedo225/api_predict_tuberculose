@@ -22,7 +22,7 @@ def load_model_from_drive(file_id: str):
     return load_model(output_path)
 
 # Charger le modèle à partir de Google Drive
-DRIVE_FILE_ID = '1j-UAGDqqPgZ2RVXKFqIBVqfhLpzIpEL7'  # Remplacez-le par votre ID fichier Google Drive
+DRIVE_FILE_ID = '10cxblNrdZJpoYsLKxcRGmj6aWCr5T1gH'  # Remplacez-le par votre ID fichier Google Drive
 model = load_model_from_drive(DRIVE_FILE_ID)
 
 # Taille de l’image
