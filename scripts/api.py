@@ -17,7 +17,7 @@ tf.config.set_visible_devices([], 'GPU')
 # Fonction pour charger le modèle à partir d'un fichier Google Drive
 def load_model_from_drive(file_id: str):
     url = f'https://drive.google.com/uc?id={file_id}'
-    output_path = 'mon_mod_entrainer_tbc .h5'
+    output_path = 'mon_mod_entrainer_tbc.h5'
     gdown.download(url, output_path, quiet=False)
     return load_model(output_path)
 
