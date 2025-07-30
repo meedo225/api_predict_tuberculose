@@ -26,7 +26,7 @@ DRIVE_FILE_ID = '10cxblNrdZJpoYsLKxcRGmj6aWCr5T1gH'  # Remplacez-le par votre ID
 model = load_model_from_drive(DRIVE_FILE_ID)
 
 # Taille de l’image
-IMG_SIZE = 224
+IMG_SIZE = 512
 
 # Clé API pour la sécurité
 API_KEY = "5431-Eg__01"
